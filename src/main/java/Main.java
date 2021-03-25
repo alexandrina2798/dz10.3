@@ -10,7 +10,7 @@ public class Main {
         int modifier = new Scanner(System.in).nextInt();
 
         //+
-        int[] arrS = FillingArray.getFilledArray(size, modifier, (s, m) -> s + m);
+        int[] arrS = FillingArray.getFilledArray(size, modifier, Integer::sum);
 
         for (Integer n : arrS) {
             System.out.print(n + " ");
